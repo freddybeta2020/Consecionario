@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ClientesActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Vehiculos" />
+
+    <EditText
+        android:id="@+id/etplaca"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="¿Cual es la placa?"
+        android:ems="10"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etmarca"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="¿Cual es la marca ?"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etmodelo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="¿Cual es el modelo?"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etvalor"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="¿Cual es el valor?"
+        android:ems="10"
+        android:inputType="number" />
+
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:enabled="false"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:text=" Activo" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btregistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Registrar"
+            android:enabled="false"
+            android:textSize="30dp"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:onClick="Consultar"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Consultar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Anular"
+            android:enabled="false"
+            android:textSize="30dp"
+            android:text="Anular" />
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:onClick="Limpiar"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Limpiar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Regresar"
+            android:textSize="29dp"
+            android:text="Regresar" />
+
+    </LinearLayout>
+</LinearLayout>
